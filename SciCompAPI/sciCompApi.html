@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+   
+   <head>
+       
+       <title>Scientific Computing API</title>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" type="text/css" href="styles.css"/>
+       <link 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+       <style type="text/css" media="screen">
+        body {
+          overflow: hidden;
+        }
+  
+        #editor {
+          min-width: 500px;
+          min-height: 500px;
+        }
+        </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script
+        src="src-noconflict/ace.js"
+        type="text/javascript"
+        charset="utf-8"
+      ></script>
+   </head>
+  
+  
+   <body>
+       
+       <h1>Initial Frame work</h1>
+     
+       
+       <p>example.</p>
+       <div>
+        <h1>Code Editor</h1>
+        <select id="myselect" onchange="selectchange(this.value.trim())">
+          <option value="1" >C</option>
+          <option value="2" >C++</option>
+          <option value="3">Python</option>
+        </select>
+        <div id="editorContainer">
+          <div class="container" style="margin-top: 30px">
+            <div class="row">
+              <div class="col">
+                <pr   <e id="editor">
+        </pre
+                >
+                <div class="col">
+                  <button class="btn btn-success">Execute</button>
+                  <br />
+                  <pre id="ans"></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!add text editor js here>
+      <script>
+        function selectchange(selectedVal){
+          console.log(selectedVal)
+          if(selectedVal != undefined && selectedVal != null && selectedVal !="")
+            $("button").off('click')
+        }
+
+
+      </script>
+   </body>
+</html>
